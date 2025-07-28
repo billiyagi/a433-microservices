@@ -6,6 +6,7 @@ services:
     container_name: item-db
     volumes:
       - app-db:/data/db
+    restart: unless-stopped
 
   item-app:
     image: ghcr.io/billiyagi/item-app:v1
@@ -14,6 +15,7 @@ services:
       - "80:8080"
     depends_on:
       - item-db
+    restart: unless-stopped
 
 volumes:
   app-db:

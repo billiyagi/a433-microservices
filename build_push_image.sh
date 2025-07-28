@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Variabel
+# Konstanta
 USERNAME="billiyagi"
 REGISTRY="ghcr.io"
 IMAGE_NAME="item-app"
